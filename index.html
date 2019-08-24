@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Exercise 2</title>
 </head>
 <body>
     <center>
         <h1>Kalkulator</h1>
     </center>
+    <div class="kalkulator">
+        <input type="text" id="result" readonly />
+        <br />
+        <input onclick="document.getElementById('result').value += 1" type="button" value="1" />
+        <input onclick="document.getElementById('result').value += 2" type="button" value="2">
+        <input onclick="document.getElementById('result').value += 3" type="button" value="3">
+        <input onclick="document.getElementById('result').value += '+'" type="button" value="+">
+        <br />
+        <input onclick="document.getElementById('result').value += 4" type="button" value="4">
+        <input onclick="document.getElementById('result').value += 5" type="button" value="5">
+        <input onclick="document.getElementById('result').value += 6" type="button" value="6">
+        <input onclick="document.getElementById('result').value += '-'" type="button" value="-">
+        <br />
+        <input onclick="document.getElementById('result').value += 7" type="button" value="7">
+        <input onclick="document.getElementById('result').value += 8" type="button" value="8">
+        <input onclick="document.getElementById('result').value += 9" type="button" value="9">
+        <input onclick="document.getElementById('result').value += '*'" type="button" value="*">
+        <br />
+        <input onclick="document.getElementById('result').value += '/'" type="button" value="/">
+        <input onclick="document.getElementById('result').value += '%'" type="button" value="%">
+        <input onclick="document.getElementById('result').value = ''" type="button" value="C">
+        <input onclick="document.getElementById('result').value = eval(document.getElementById('result').value)"  type="button" value="=">
+    </div>
 </body>
 </html>
